@@ -1,0 +1,36 @@
+.work-proccess {
+  display: none;
+  padding-top: 45px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.work-proccess__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.work-proccess__list {
+  @extend %flexModel;
+}
+
+.work-proccess__item {
+  position: relative;
+  .work-proccess__subtitle {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 27px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.17;
+    color: $color-white;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
